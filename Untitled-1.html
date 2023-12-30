@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Nagaraj</title>
+    <link rel="icon" href="hii.jpeg">
+</head>
+
+<body>
+    <!--Intro animation-->
+    <div class="intro">
+        <h1 class="logo-header">
+            <span class="logo">W</span><span class="logo">e</span><span class="logo">l</span><span
+                class="logo">c</span><span class="logo">o</span><span class="logo">m</span><span class="logo">e</span>
+        </h1>
+    </div>
+
+    <div id="particles-js"></div>
+
+    <header class="l-header" id="head">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav_logo">
+                    <img src="hii.jpeg" alt="">
+                </a>
+            </div>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list" id="navlist">
+                    <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+                    <li class="nav_item"><a href="#skills" class="nav_link">Services</a></li>
+                    <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
+
+                    <!--Dark mode toggle-->
+                    <div class="toggle-container">
+                        <input type="checkbox" id="toggle" name="toggle">
+                        <label class="lab" for="toggle"><i class='bx bxs-moon'></i></label>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="nav_toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!-- HOME -->
+        <section class="home bd-grid" id="home">
+            <div class="home_data">
+                <h1 class="home_title">Hello, <br>
+                    This is <span class="home_title-color">NK Solutions</span></h1>
+
+                <a href="#contact" class="button">Contact</a>
+            </div>
+
+            <div class="home_social">
+                <a href="https://www.linkedin.com/in/nagaraj-karalingannavar-4b5480259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="home_social-icon"><i
+                        class="bx bxl-linkedin"></i></a>
+                <a href="https://instagram.com/naga.raj1408?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank" class="home_social-icon"><i
+                        class="bx bxl-instagram"></i></a>
+            </div>
+
+            <div class="home_img">
+                <img src="me.jpeg" alt="">
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+            <div class="about_container bd-grid">
+           
+                <div>
+                    <p class="about_text"> we strive to revolutionize the digital landscape through innovative and
+                         tailored technology solutions. As a dynamic and forward-thinking company, we are committed 
+                         to delivering cutting-edge services that empower businesses, drive efficiency, and elevate 
+                         user experiences.Our vision is to be a leader in providing comprehensive technology solutions
+                        that empower organizations to thrive in the digital era. We envision a world where technology 
+                        seamlessly integrates into every aspect of business, unlocking new possibilities and fostering
+                         growth.
+                    </p>
+                </div>
+               
+                    <div class="about_img">
+                        <img src="th.jpeg" alt="">
+                    </div>
+    
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Services</h2>
+            <div class="skills_container bd-grid">
+                <div>
+                    <div class="skills_data">
+                        <div class="skills_name">
+                            <span class="skills_name">1. Software Development</span>
+                        </div>
+                        <div class="skills_bar skills_"></div>
+                    </div>
+
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <span class="skills_name">2. Cloud Computing Services</span>
+                        </div>
+                        <div class="skills_bar skills_"></div>
+                    </div>
+
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <span class="skills_name">3. Cybersecurity</span>
+                        </div>
+                        <div class="skills_bar skills_"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <span class="skills_name">4. Web Design and Development</span>
+                        </div>
+                        <div class="skills_bar skills_"></div>
+                    </div>
+
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <span class="skills_name">5. IT Consulting</span>
+                        </div>
+                        <div class="skills_bar skills_"></div>
+                    </div>
+
+                    <div class="skills_data">
+                        <div class="skills_name">
+                            <span class="skills_name">6. Training and Support</span>
+                        </div>
+                        <div class="skills_bar skills_"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        
+        <!-- CONTACT -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact_container bd-grid">
+                <form class='contact_form' data-netlify-recaptcha='true' method='POST' name='contact'><input type='hidden' name='form-name' value='contact' />
+                    <input type="text" name="name" placeholder="Name" class="contact_input" required>
+                    <input type="email" name="email" placeholder="Email" class="contact_input" required>
+                    <textarea name="text" placeholder="Description" id="" cols="0" rows="10" class="contact_input" required></textarea>
+
+                   
+<noscript>
+  <div>
+  <div style="width: 302px; height: 422px; position: relative;">
+  <div style="width: 302px; height: 422px; position: absolute;">
+  <iframe src="https://www.google.com/recaptcha/api/fallback?k=6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9" frameborder="0" scrolling="no"
+    style="width: 302px; height:422px; border-style: none;">
+  </iframe>
+  </div>
+  </div>
+  <div style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+    <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+      style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;" >
+    </textarea>
+  </div>
+  </div>
+</noscript>
+</div>
+                
+                    <input type="submit" value="Send" class="contact_button button">
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p class="footer_title">NK Solutions</p>
+            <div class="footer_social">
+                <a href="https://www.linkedin.com/in/nagaraj-karalingannavar-4b5480259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="home_social-icon" class="footer_icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://instagram.com/naga.raj1408?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" class="footer_icon"><i
+                        class='bx bxl-instagram'></i></a>
+            </div>
+            <p>&#169; 2023 copyright all right reserved</p>
+        </footer>
+    </main>
+
+    <!-- Scroll -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Autowriter -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <!-- Particles -->
+    <script src="https://www.safetpojskic.com/assets/js/particles.js"></script>
+    <!-- Javascript -->
+    <script src="https://www.safetpojskic.com/assets/js/app.js"></script>
+</body>
+</html>
